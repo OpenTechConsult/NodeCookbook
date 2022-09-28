@@ -20,7 +20,8 @@ readFile(filePath, "utf8", (err, contents) => {
     }
     console.log('File contents:', contents)
     const upperContents = contents.toUpperCase()
-    updateFile(filePath, upperContents)
+
+    setTimeout(() => updateFile(filePath, upperContents), 10)
 })
 
 setInterval(() => process.stdout.write('******\n'), 1).unref()
