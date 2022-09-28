@@ -1,0 +1,20 @@
+{
+  "name": "06-recipe-fetching-metadata",
+  "version": "1.0.0",
+  "description": "Create a small project returns information about a file using the fs module",
+  "main": "metadata.js",
+  "type": "module",
+  "scripts": {
+    "start": "node metadata.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14"
+  },
+  "engineStrict": true,
+  "keywords": [],
+  "author": "Elom Atsou Agboka <opentech.consult@gmail.com> (https://github.com/OpenTechConsult)",
+  "license": "MIT"
+}
