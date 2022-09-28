@@ -8,7 +8,7 @@ function printMetaData(file) {
         const fileStats = statSync(file)
         console.log(fileStats)
     } catch (err) {
-        console.error('Error readind the file path:', file)
+        console.error('Error reading the file path:', file)
     }
 }
 

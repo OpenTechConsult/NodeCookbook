@@ -1,0 +1,26 @@
+{
+  "name": "07-recipe-modif-file-permission",
+  "version": "1.0.0",
+  "description": "Having a file that we create. We want to additionally grant write access to those in the same group in our shell.",
+  "main": "change-permission. js",
+  "type": "module",
+  "scripts": {
+    "start": "node change-permission.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14"
+  },
+  "engineStrict": true,
+  "keywords": [
+    "file",
+    "access",
+    "permission",
+    "nodejs",
+    "chmod"
+  ],
+  "author": "Elom Atsou Agboka <opentech.consult@gmail.com> (https://github.com/OpenTechConsult)",
+  "license": "MIT"
+}
