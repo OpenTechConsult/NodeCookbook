@@ -1,0 +1,22 @@
+{
+  "name": "05-recipe-working-with-files-async-with-promise-api",
+  "version": "1.0.0",
+  "description": "We want to use the fs/promise API to  work with files asynchronously.",
+  "main": "readWritePromise.js",
+  "type": "module",
+  "scripts": {
+    "start": "node readWritePromise.js",
+    "dev": "nodemon readWritePromise.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "engineStrict": true,
+  "keywords": [],
+  "author": "Elom Atsou Agboka <opentech.consult@gmail.com> (https://github.com/OpenTechConsult)",
+  "license": "MIT"
+}
