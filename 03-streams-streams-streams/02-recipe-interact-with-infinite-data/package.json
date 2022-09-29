@@ -1,0 +1,24 @@
+{
+  "name": "02-recipe-interact-with-infinite-data",
+  "version": "1.0.0",
+  "description": "Streams makes it possible to interact with infinite amount of data. This program process data sequentially indefinitely using stream.",
+  "main": "infinite-read.js",
+  "type": "module",
+  "scripts": {
+    "start": "node infinite-read.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14"
+  },
+  "engineStrict": true,
+  "keywords": [
+    "stream",
+    "infinite-read",
+    "readable stream"
+  ],
+  "author": "Elom Atsou Agboka <opentech.consult@gmail.com> (https://github.com/OpenTechConsult)",
+  "license": "MIT"
+}
