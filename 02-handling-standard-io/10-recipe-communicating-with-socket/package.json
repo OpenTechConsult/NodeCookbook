@@ -1,0 +1,29 @@
+{
+  "name": "10-recipe-communicating-with-socket",
+  "version": "1.0.0",
+  "description": "A simple program to create a TCP server and a TCP client and allow them to communicate.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "server": "node server.js",
+    "client": "node client.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14"
+  },
+  "engineStrict": true,
+  "keywords": [
+    "I/O",
+    "Socket",
+    "TCP",
+    "client",
+    "server",
+    "network",
+    "nodejs"
+  ],
+  "author": "Elom Atsou Agboka <opentech.consult@gmail.com> (https://github.com/OpenTechConsult)",
+  "license": "MIT"
+}
