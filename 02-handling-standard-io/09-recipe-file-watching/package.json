@@ -1,0 +1,32 @@
+{
+  "name": "09-recipe-file-watching",
+  "version": "1.0.0",
+  "description": "A small program that watches for changes in a file using the **watchFile()** API and then prints a message when a change is detected.",
+  "main": "watch.js",
+  "type": "module",
+  "scripts": {
+    "start": "node watch.js",
+    "dev": "nodemon watch.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "engineStrict": true,
+  "keywords": [
+    "File system",
+    "watch",
+    "watchFile",
+    "node.js",
+    "files",
+    "directories"
+  ],
+  "author": "Elom Atsou Agboka <opentech.consult@gmail.com> (https://github.com/OpenTechConsult)",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.29.4"
+  }
+}
