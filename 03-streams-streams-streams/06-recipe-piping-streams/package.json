@@ -1,0 +1,27 @@
+{
+  "name": "06-recipe-piping-streams",
+  "version": "1.0.0",
+  "description": "A pipe is a form of one way redirection. Similar to how we use pipe in our shells to pipe outputs between programs, we can also use Node.js `pipe()` method to pipe data between streams.",
+  "main": "pipe-stream.js",
+  "type": "module",
+  "scripts": {
+    "start": "node pipe-stream.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14"
+  },
+  "engineStrict": true,
+  "keywords": [
+    "pipe",
+    "stream",
+    "readable",
+    "writable",
+    "node",
+    "javascript"
+  ],
+  "author": "Elom Atsou Agboka <opentech.consult@gmail.com> (https://github.com/OpenTechConsult)",
+  "license": "MIT"
+}
