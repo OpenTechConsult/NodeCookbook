@@ -1,0 +1,29 @@
+{
+  "name": "03-recipe-readable-stream-with-async-iterator",
+  "version": "1.0.0",
+  "description": "Readable streams are asynchronous iterables. This means we can use the **for await... of** syntax to loop over the stream.",
+  "main": "for-await-read-stream.js",
+  "type": "module",
+  "scripts": {
+    "start": "node for-await-read-stream.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14"
+  },
+  "engineStrict": true,
+  "keywords": [
+    "stream",
+    "readable",
+    "async",
+    "async iterable",
+    "iterator",
+    "iterable",
+    "nodejs",
+    "javascript"
+  ],
+  "author": "Elom Atsou Agboka <opentech.consult@gmail.com> (https://github.com/OpenTechConsult)",
+  "license": "MIT"
+}
