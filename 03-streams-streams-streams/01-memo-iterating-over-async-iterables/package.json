@@ -1,0 +1,20 @@
+{
+  "name": "01-memo-iterating-over-async-iterables",
+  "version": "1.0.0",
+  "description": "Iterate over an object that explicitly implements async iterable protocol.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14"
+  },
+  "engineStrict": true,
+  "keywords": [],
+  "author": "Elom Atsou Agboka <opentech.consult@gmail.com> (https://github.com/OpenTechConsult)",
+  "license": "MIT"
+}
