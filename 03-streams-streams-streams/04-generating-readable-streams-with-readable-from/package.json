@@ -1,0 +1,27 @@
+{
+  "name": "04-generating-readable-streams-with-readable-from",
+  "version": "1.0.0",
+  "description": "The `Readable.from()` method is exposed by Node.js core **_stream_** module. This method is used to construct readable streams with iterator.",
+  "main": "async-generator.js",
+  "type": "module",
+  "scripts": {
+    "start": "node async-generator.js",
+    "dev": "nodemon async-generator.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "keywords": [
+    "readable stream",
+    "stream",
+    "readable",
+    "Readable.from()",
+    "node.js"
+  ],
+  "author": "Elom Atsou Agboka <opentech.consult@gmail.com> (https://github.com/OpenTechConsult)",
+  "license": "MIT"
+}
