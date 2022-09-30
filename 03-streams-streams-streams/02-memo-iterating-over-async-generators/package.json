@@ -1,0 +1,26 @@
+{
+  "name": "02-memo-iterating-over-async-generators",
+  "version": "1.0.0",
+  "description": "Since the values of **async generator** functions conform to the **async iterable protocol**, they can be looped using `for await...of`",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14"
+  },
+  "engineStrict": true,
+  "keywords": [
+    "async",
+    "generator",
+    "iterable",
+    "iterating"
+  ],
+  "author": "Elom Atsou Agboka <opentech.consult@gmail.com> (https://github.com/OpenTechConsult)",
+  "license": "MIT"
+}
