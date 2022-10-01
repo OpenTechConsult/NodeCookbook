@@ -1,0 +1,26 @@
+{
+  "name": "01-recipe-making-http-requests",
+  "version": "1.0.0",
+  "description": "In this example, we're going to use the Node.js core http and https modules to send both HTTP GET requests and an HTTP POST request.",
+  "main": "request.js",
+  "type": "module",
+  "scripts": {
+    "start": "node requests.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14"
+  },
+  "engineStrict": true,
+  "keywords": [
+    "http",
+    "request",
+    "response",
+    "client",
+    "server"
+  ],
+  "author": "Elom Atsou Agboka <opentech.consult@gmail.com> (https://github.com/OpenTechConsult)",
+  "license": "MIT"
+}
