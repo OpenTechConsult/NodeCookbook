@@ -1,0 +1,28 @@
+{
+  "name": "08-create-object-mode-transform-stream",
+  "version": "1.0.0",
+  "description": "By default Node.js streams operate on String, Buffer, or Uint8Array objects. However, it is possible to work with Node.js streams in **object mode**. This allows us to work with other JavaScript values except null value. In object mode, the values returned from the stream are generic JavaScript objects.",
+  "main": "object-stream.js",
+  "type": "module",
+  "scripts": {
+    "start": "node object-stream.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ndjson": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "engineStrict": true,
+  "keywords": [
+    "stream",
+    "object",
+    "object mode",
+    "transform stream",
+    "node",
+    "javascript"
+  ],
+  "author": "Elom Atsou Agboka <opentech.consult@gmail.com> (https://github.com/OpenTechConsult)",
+  "license": "MIT"
+}
