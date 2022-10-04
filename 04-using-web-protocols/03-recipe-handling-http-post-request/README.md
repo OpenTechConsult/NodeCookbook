@@ -17,3 +17,7 @@ or
 
 > node server.js
 
+## 2. Handle HTTP POST requests that are sending JSON data.
+
+It's common for Node.js HTTP server to interact via JSON data.
+We'll experiment with HTTP POST requests that are sending JSON data.
