@@ -1,0 +1,20 @@
+{
+  "name": "02-building-http-server",
+  "version": "1.0.0",
+  "description": "In this example, we will use the Node.js core APIs to build an HTTP server that will accept HTTP GET requests only.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14"
+  },
+  "engineStrict": true,
+  "keywords": [],
+  "author": "Elom Atsou Agboka <opentech.consult@gmail.com> (https://github.com/OpenTechConsult)",
+  "license": "MIT"
+}
