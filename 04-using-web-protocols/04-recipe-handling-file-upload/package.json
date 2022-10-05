@@ -1,0 +1,30 @@
+{
+  "name": "04-recipe-handling-file-upload",
+  "version": "1.0.0",
+  "description": "Uploading a file to the web is a common activity. Be it an image or a video. Handling file upload is different than posting simple data on the server. Browsers embed files being uploaded into multipart messages.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "formidable": "^2.0.1"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "engineStrict": true,
+  "keywords": [
+    "file upload",
+    "http",
+    "post",
+    "multipart",
+    "parser",
+    "form",
+    "upload",
+    "formidable"
+  ],
+  "author": "Elom Atsou Agboka <opentech.consult@gmail.com> (https://github.com/OpenTechConsult)",
+  "license": "MIT"
+}

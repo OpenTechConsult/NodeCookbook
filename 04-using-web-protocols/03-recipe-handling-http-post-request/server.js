@@ -3,7 +3,7 @@ import { readFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 
 // create a reference to _public/form.html_
-const form = readFileSync(join(dirname(""), "public", "form.html"))
+const form = readFileSync(join(dirname(''), "public", "form.html"))
 
 // setup the server
 createServer((req, res) => {
@@ -25,7 +25,7 @@ createServer((req, res) => {
 
 // create a function named "get()" that returns the form
 function get(res) {
-    res.writeHead(200, { "Content-Type": "text/html" })
+    res.writeHead(200, { "Content-Type": "text/html", })
     res.end(form)
 }
 
