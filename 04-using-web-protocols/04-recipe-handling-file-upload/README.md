@@ -24,3 +24,11 @@ or
 In some cases, you may want to upload multiple files to a server at the same time.
 Conveniently, with **formidable**, this is supported by default.
 We just need to make one change to our **form.html** file, which is added __multiple__ attribute to the input element.
+
+## Processing multiple input types
+
+It's common for a form to contain a mixture of input type. The **formidable** module handles multiple input types.
+
+Let's extend the HTML form to contain some additional text input fields to demonstrate how formidable handles multiple input types.
+
+We'll receive a JSON response containing all our form data.
