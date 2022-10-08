@@ -150,5 +150,13 @@ Within the _connection_ event callback function, we registered a nested listener
 For our client, we register a regular HTTP server to serve our index.html page. Our index.html contains a JavaScript code that is executed within the browser. Within the JavaScript code, we created a connection to our WebSocket server, providing the endpoint that the ws object **ws** object is listening to:
 
 ```js
-const ws = new WebSocket('ws://localhost:3000')
+let ws = new WebSocket('ws://localhost:3000')
 ```
+
+To send a message to our WebSocket server, we just call **send** on the **ws** object with **ws.send(msg)**.
+
+We wrapped the **ws.send(msg)** in an event listener. The event listener listen to the click event on the submit button, meaning that we would send the message to the WebSocket server when the submit button is clicked.
+
+In our script in index.html, we registered event listener functions on our WebSocket, including **onmessage**, **onclose**, and **onerror** event listeners.
+These functions execute on their respective events. For example, the **onmessage** event listener function would execute when our WebSocket receives a message. We use these event listeners to add output to our web page.
+
