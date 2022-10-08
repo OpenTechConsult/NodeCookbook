@@ -132,3 +132,23 @@ server.listen(8080)
 
 Taking a look at the terminal window where the server is running, the message **Received: Hello** is displayed.
 This means that the client and the server are communicating over WebSocket.
+
+## How it work
+
+In this application, we used the **ws** module to define a WebSocket server:
+
+```js
+import { WebSocketServer } from 'ws'
+
+const wss = new WebSocketServer({ port: 3000, })
+```
+
+We then register a listener for the connection event. The function passed to this listener is executed each time there is a new connection to the WebSocket.
+
+Within the _connection_ event callback function, we registered a nested listener for the _message_ event, which gets executed each time a message is received.
+
+For our client, we register a regular HTTP server to serve our index.html page. Our index.html contains a JavaScript code that is executed within the browser. Within the JavaScript code, we created a connection to our WebSocket server, providing the endpoint that the ws object **ws** object is listening to:
+
+```js
+const ws = new WebSocket('ws://localhost:3000')
+```
