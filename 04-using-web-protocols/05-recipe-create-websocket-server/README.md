@@ -160,3 +160,57 @@ We wrapped the **ws.send(msg)** in an event listener. The event listener listen 
 In our script in index.html, we registered event listener functions on our WebSocket, including **onmessage**, **onclose**, and **onerror** event listeners.
 These functions execute on their respective events. For example, the **onmessage** event listener function would execute when our WebSocket receives a message. We use these event listeners to add output to our web page.
 
+## There is more...
+
+Now we've learned how we can communicate between browser and server using **WebSockets**. But it is also possible to create a WebSocket client in Node.js, enabling two Node.js programs to communicate over WebSockets using the following steps.
+
+1. Start by creating a new file called **node-client.js** within our project root directory
+
+> `touch node-client.js`
+
+2. Import the **ws** module and create  a new **WebSocket** object that is configured to point the WebSocket server we created previously.
+
+```js
+import { WebSocketServer } from 'ws'
+const ws = new WebSocketServer({ port: 3000, })
+```
+
+3. Now we'll setup some listeners on our sockets. We will add listeners for the close **open**, **close** and **message** events
+
+```js
+ws.on('open', () => {
+    console.log('Connected')
+})
+
+ws.on('close', () => {
+    console.log('Disconnected')
+})
+
+ws.on('message', (message) => {
+    console.log('Received: ' + message)
+})
+```
+
+4. Now let's send a message Hello to the WebSocket server every 3 seconds. We will use the `setInterval()` function to achieve this:
+
+```js
+setInterval(() => {
+    ws.send('Hello')
+}, 3000)
+```
+
+5. Start both the WebSocket server and your Node.js-based client in separate Terminal window.
+
+> `node server.js`
+> 
+> `node node-client.js`
+
+6. We should expect to see the server responding every 3 seconds to **Hello** message with the message **World**
+
+> socket connected
+
+> Received: Hello
+
+ > Received: Hello
+
+ > Received: Hello
