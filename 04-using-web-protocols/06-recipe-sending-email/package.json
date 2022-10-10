@@ -1,0 +1,29 @@
+{
+  "name": "06-recipe-sending-email",
+  "version": "1.0.0",
+  "description": "SMTP stands for Simple Mail Transfer Protocol and is a protocol for sending email. In this application, we will be setting up an SMTP server using a third party npm module name **smtp-server**.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "smtp-server": "^3.11.0"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "engineStrict": true,
+  "keywords": [
+    "web",
+    "protocol",
+    "mail",
+    "smtp",
+    "server",
+    "I/O",
+    "stream"
+  ],
+  "author": "Elom Atsou Agboka <opentech.consult@gmail.com> (https://github.com/OpenTechConsult)",
+  "license": "MIT"
+}
