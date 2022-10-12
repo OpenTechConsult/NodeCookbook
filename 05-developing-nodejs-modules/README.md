@@ -43,3 +43,46 @@ _**IMPORTANT NOTE**_
 _**npm** is the name of the Command-Line Interface tool(CLI) bundle with Node.js as the default package manager. npm, inc is also the name of the company that own the public registry [https://registry.npmjs.org/](https://registry.npmjs.org/)_
 
 Note that as we'll be downloading and publishing module to the npm registry, this project will require internet access.
+
+## Global modules
+
+It is possible to **globally install** Node.js modules. Typically, the type of modules we'll install are binaries or program that we want to be accessible in your shell. To globally install a module, we pass the **--global** command to the **install** command as follows:
+
+> **$ npm install --global lolcatjs**
+
+This will not install **lolcatjs** into our **node_modules** folder. Instead it will be install into the **bin** directory of our Node.js installation. To see where it was installed, we can use the **which** command.
+
+> **$ which lolcatjs
+
+>/Users/eagboka/.nvm/versions/node/v16.17.0/bin/lolcatjs
+
+The **bin** directory is likely to already be in our path because that is where the **node** and **npm** binaries are stored. Therefore any executable program that is globally installed will also be made available in our shell. Now we should be able to call the **lolcatjs** module from our shell.
+
+> $ lolcatjs --help
+
+In **npm** version v5.2, **npm** added the **npx** command to their CLI. This command allows us to execute a global module without having it permanently stored. We could have executed the **lolcatjs** module without storing it with the following command:
+
+> **$ npx lolcatjs**
+
+In general npx should be sufficient for most modules that we wish to execute. However, if we want the global module to be permanently available offline, then we may wish to still globally install the module rather than using the **npx** command.
+
+## Responsibly consuming modules
+
+We'll likely want to leverage the Node.js module ecosystem in our own application. Modules provide solutions and implementations of common problems and tasks, so reusing existing code save us time when developing our applications.
+
+As we see in this application, simply pulling in the web framework, **express** pulled in over 80 other modules. Pulling in this number of modules adds risk, especially if you're using these modules for production workloads.
+
+There are many considerations we should take when choosing a Node.js module to include in our application. The following five considerations should be taken in particular:
+
+- Security
+
+    Can we depend on the module to fix security vulnerabilities ?$
+    We will later go into more detail about how to check for known security issues in our module.
+
+- Licenses
+
+    If you link with open source libraries and then distribute the software, the software needs to be compliant with the licenses of the linked libraries. Licenses can vary from restrictive/protective to permissive. In GitHub, we can navigate to the license file and it will give us a basic overview of what the license permits.
+
+- Maintenance
+
+    We'll also need to consider how well maintained the module is. The majority of modules publish their source code to GitHub and have their bug reports viewable as GitHub issues. From viewing their issues and how/when the maintainers are responding to bug reports, we should be able to get some insight into how maintained the module is.
