@@ -1,0 +1,15 @@
+{
+  "name": "03-recipe-implementing-your-module",
+  "version": "1.0.0",
+  "description": "In this application, we're going to start writing our module code. The module we will write will expose a single API that will reverse a sentence pass to it. We'll also install a popular code formatter to keep our module code consistent.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Elom Atsou Agboka <opentech.consult@gmail.com> (https://github.com/OpenTechConsult)",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "2.7.1"
+  }
+}
