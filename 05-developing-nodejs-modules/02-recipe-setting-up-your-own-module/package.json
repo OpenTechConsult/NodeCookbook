@@ -1,0 +1,17 @@
+{
+  "name": "02-recipe-setting-up-your-own-module",
+  "version": "1.0.0",
+  "description": "A project to show to create an npm module a publish it. The project is about creating an API that reverse any sentence pass to it",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npm",
+    "module",
+    "GitHub",
+    "Git"
+  ],
+  "author": "Elom Atsou Agboka <opentech.consult@gmail.com> (https://github.com/OpenTechConsult)",
+  "license": "ISC"
+}
