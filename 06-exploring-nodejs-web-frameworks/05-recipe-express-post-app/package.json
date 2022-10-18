@@ -1,0 +1,16 @@
+{
+  "name": "01-recipe-building-web-app-w-express",
+  "version": "1.0.0",
+  "description": "[Express.js](http://www.expressjs.com) or Express, has been and remains the most popular web framework for building web applications in Node.js. Express was one of the first Node.js web frameworks and was based on the **Sinatra** web framework for **Ruby and Rails**. Express.js was a project of the [**OpenJS Foundation**](http://www.openjsf.org/projects/), and previously the Node.js Foundation.js.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Elom Atsou Agboka <opentech.consult@gmail.com> (https://github.com/OpenTechConsult)",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2"
+  }
+}
