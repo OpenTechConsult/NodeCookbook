@@ -113,3 +113,11 @@ In this project, we'll create a web server that responds on the / route using Ex
 ![Express](express.png)
 
 Now we've created an Express.js web server that responds with an HTML page on the / route.
+
+## How it works
+
+The Express.js framework abstract the underlying Node.js core web protocol APIs provided by the **http** and **https** core modules. Express.js provides an interface for routing and adding middleware.
+
+The line `const app = express()` is where we create our Express.js server, where **app** represents the server.
+
+The `app.use()` function is used to register middleware. In the context of Express.js
